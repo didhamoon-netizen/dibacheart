@@ -470,14 +470,29 @@ const Icon = ({ name, size = 16 }) => {
 
 // ── Mock Data ──
 const STYLES = [
-  { id: 1, name: "رنسانس اولیه", nameEn: "Early Renaissance", period: "قرن ۱۵ میلادی", color: "#ef4444", description: "شروع دوباره هنر کلاسیک در ایتالیا با تمرکز بر پرسپکتیو و آناتومی.", order: 1 },
-  { id: 2, name: "رنسانس عالی", nameEn: "High Renaissance", period: "۱۴۹۰ تا ۱۵۲۷", color: "#f59e0b", description: "اوج هنر رنسانس با آثار لئوناردو، میکل‌آنژ و رافائل.", order: 2 },
-  { id: 3, name: "مانریسم", nameEn: "Mannerism", period: "قرن ۱۶ میلادی", color: "#a855f7", description: "سبک هنری با تناسبات غیرطبیعی و رنگ‌های عجیب.", order: 3 },
-  { id: 4, name: "باروک", nameEn: "Baroque", period: "۱۶۰۰ تا ۱۷۵۰", color: "#22c55e", description: "درام، حرکت و نور در نقاشی‌های بزرگ مقیاس.", order: 4 },
-  { id: 5, name: "رئالیسم", nameEn: "Realism", period: "۱۸۴۰ تا ۱۸۸۰", color: "#3b82f6", description: "نمایش واقعیت زندگی روزمره بدون ایده‌آل‌سازی.", order: 5 },
-  { id: 6, name: "امپرسیونیسم", nameEn: "Impressionism", period: "۱۸۶۰ تا ۱۸۹۰", color: "#06b6d4", description: "تمرکز بر نور و رنگ با لکه‌های رنگی آزاد.", order: 6 },
-  { id: 7, name: "پست‌امپرسیونیسم", nameEn: "Post-Impressionism", period: "۱۸۸۰ تا ۱۹۰۰", color: "#ec4899", description: "گسترش امپرسیونیسم با ساختار و نمادگرایی.", order: 7 },
-  { id: 8, name: "کوبیسم", nameEn: "Cubism", period: "۱۹۰۷ تا ۱۹۲۰", color: "#6366f1", description: "شکستن فرم‌ها به هندسه‌های ساده.", order: 8 },
+    { id: 1, order: 1, name: 'رنسانس اولیه', nameEn: 'Early Renaissance', period: 'قرن ۱۵', color: '#E67E22' },
+    { id: 2, order: 2, name: 'رنسانس عالی', nameEn: 'High Renaissance', period: 'اوایل قرن ۱۶', color: '#D35400' },
+    { id: 3, order: 3, name: 'مانیریسم', nameEn: 'Mannerism', period: 'قرن ۱۶', color: '#8E44AD' },
+    { id: 4, order: 4, name: 'باروک', nameEn: 'Baroque', period: 'قرن ۱۷', color: '#C0392B' },
+    { id: 5, order: 5, name: 'روکوکو', nameEn: 'Rococo', period: 'اوایل قرن ۱۸', color: '#F1C40F' },
+    { id: 6, order: 6, name: 'نوکلاسیسیسم', nameEn: 'Neoclassicism', period: 'اواخر قرن ۱۸', color: '#3498DB' },
+    { id: 7, order: 7, name: 'رومانتیسیسم', nameEn: 'Romanticism', period: 'قرن ۱۹', color: '#27AE60' },
+    { id: 8, order: 8, name: 'رئالیسم', nameEn: 'Realism', period: 'اواسط قرن ۱۹', color: '#7F8C8D' },
+    { id: 9, order: 9, name: 'امپرسیونیسم', nameEn: 'Impressionism', period: 'اواخر قرن ۱۹', color: '#34495E' },
+    { id: 10, order: 10, name: 'پست‌امپرسیونیسم', nameEn: 'Post-Impressionism', period: 'اواخر قرن ۱۹', color: '#9B59B6' },
+    { id: 11, order: 11, name: 'سمبولیسم', nameEn: 'Symbolism', period: 'اواخر قرن ۱۹', color: '#16A085' },
+    { id: 12, order: 12, name: 'فاویسم', nameEn: 'Fauvism', period: 'اوایل قرن ۲۰', color: '#E74C3C' },
+    { id: 13, order: 13, name: 'اکسپرسیونیسم', nameEn: 'Expressionism', period: 'اوایل قرن ۲۰', color: '#D35400' },
+    { id: 14, order: 14, name: 'کوبیسم', nameEn: 'Cubism', period: 'اوایل قرن ۲۰', color: '#2C3E50' },
+    { id: 15, order: 15, name: 'فوتوریسم', nameEn: 'Futurism', period: 'اوایل قرن ۲۰', color: '#F39C12' },
+    { id: 16, order: 16, name: 'دادائیسم', nameEn: 'Dadaism', period: '۱۹۱۶ به بعد', color: '#95A5A6' },
+    { id: 17, order: 17, name: 'سوررئالیسم', nameEn: 'Surrealism', period: 'دهه ۱۹۲۰', color: '#8E44AD' },
+    { id: 18, order: 18, name: 'اکسپرسیونیسم انتزاعی', nameEn: 'Abstract Expressionism', period: 'دهه ۱۹۴۰', color: '#2980B9' },
+    { id: 19, order: 19, name: 'پاپ آرت', nameEn: 'Pop Art', period: 'دهه ۱۹۵۰', color: '#F1C40F' },
+    { id: 20, order: 20, name: 'مینیمالیسم', nameEn: 'Minimalism', period: 'دهه ۱۹۶۰', color: '#BDC3C7' },
+    { id: 21, order: 21, name: 'هنر مفهومی', nameEn: 'Conceptual Art', period: 'دهه ۱۹۶۰', color: '#34495E' },
+    { id: 22, order: 22, name: 'پست‌مدرنیسم', nameEn: 'Postmodernism', period: 'دهه ۱۹۷۰', color: '#E67E22' },
+    { id: 23, order: 23, name: 'هنر دیجیتال/معاصر', nameEn: 'Digital/Contemporary Art', period: 'دهه ۱۹۹۰', color: '#1ABC9C' }
 ];
 
 const ARTISTS = [
